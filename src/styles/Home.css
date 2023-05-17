@@ -1,0 +1,17 @@
+#splash-screen {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background: url(../assets/images/splash_play.png) repeat center center;
+    background-size: cover;
+}
+.card-home{
+    position: absolute;
+    z-index: 555;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

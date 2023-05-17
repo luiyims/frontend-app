@@ -1,0 +1,13 @@
+.bg-blue {
+    background-color: rgba(3, 3, 40, 0.9);
+    -webkit-transition: background-color .5s ease-in-out!important;
+    transition: background-color .5s ease-in-out!important
+
+}
+
+body{
+    color: #272626 !important;
+    min-height: 75rem;
+    padding-top: 10.5rem;
+    background: #050d1e;
+}
