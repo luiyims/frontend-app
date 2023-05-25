@@ -4,6 +4,7 @@ import { DefaultComponent } from "../components/DefaultComponent";
 import { Home } from '../components/Home';
 import { MovieList } from '../components/MovieList';
 import { DetailMovie } from '../components/DetailMovie';
+import { MovieGenres } from '../components/MovieGenres';
 import videosData from '../assets/movies.json';
 
 
@@ -14,6 +15,7 @@ export const AppRouter = () => {
             <Routes>
                 <Route exact path="/" element={<Home/>}></Route>
                 <Route exact path="/trending-movies" element={<MovieList videosData={videosData}/>}></Route>
+                <Route exact path="/genres-movies" element={<MovieGenres videosData={videosData}/>}></Route>
                 <Route path='/moviedetail/:id' element={<DetailMovie videosData={videosData}/>}></Route>
                 <Route path="*" element={<DefaultComponent/>}></Route>
             </Routes>

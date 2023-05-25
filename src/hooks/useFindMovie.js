@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams, Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 export const useFindMovie = ({ videosData }) => {
     
@@ -7,7 +7,7 @@ export const useFindMovie = ({ videosData }) => {
     const { id } = useParams();
 
     useEffect(() => {
-        const video = videosData.find(video => video.id === parseInt(id));
+        const video = videosData.movies.find(video => video.id === parseInt(id));
         setSelectedVideo(video);
     }, [id, videosData]);
 
