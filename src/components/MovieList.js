@@ -5,6 +5,7 @@ import '../styles/search.css';
 
 export const MovieList = ({ videosData }) => {
   const [searchTerm, setSearchTerm] = useState('');
+  
   const filteredMovies = videosData.movies.filter(movie =>
     movie.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
